@@ -68,3 +68,31 @@ Output ini muncul saat user memilih menu 7) Keluar dari Program. Program menampi
 - Contohnya: Item.java menyimpan informasi tentang koleksi fashion (misalnya: id, nama, kategori, ukuran, warna, brand, tahun).
 
 - Peran: Menjadi representasi data utama yang diproses aplikasi.
+  
+2. Package com.mycompany.koleksifashion.service
+
+- Isi: FashionService.java
+
+- Fungsi: Package ini bertindak sebagai Controller pada pola MVC.
+
+Service mengatur alur logika aplikasi, menghubungkan data (Model) dengan antarmuka pengguna (View). Di sini biasanya diletakkan method untuk operasi CRUD (Create, Read, Update, Delete) terhadap data Item.
+
+- Peran: Mengatur bisnis logic, menerima input dari user (via Main / View), lalu memprosesnya menggunakan Model.
+
+3. Package com.mycompany.koleksifashion.main
+
+- Isi: (belum terlihat detail di gambar, tapi biasanya ada file Main.java).
+
+- Fungsi: Package ini biasanya merepresentasikan View pada pola MVC.
+
+View bertugas menampilkan data dan menerima interaksi user. Jika menggunakan console, maka menampilkan menu, menerima input scanner, dan memanggil method dari FashionService.
+
+- Peran: Menjadi pintu masuk aplikasi (entry point) yang menjalankan program.
+
+4. Package com.mycompany.koleksifashion
+
+- Isi: File zip (Postest1_KoleksiFashion.zip, Postest2_KoleksiFashion.zip).
+
+- Fungsi: Bukan bagian langsung dari MVC, lebih sebagai arsip project.
+
+- Peran: Hanya untuk menyimpan hasil submit/postest.
